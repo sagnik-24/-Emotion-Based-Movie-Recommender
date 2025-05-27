@@ -4,11 +4,11 @@ import cv2
 import time
 import os
 
-API_KEY = 'cf722d0fde4b46782d0580ae32e0b46e'
 BASE_URL = 'https://api.themoviedb.org/3'
 urll = "https://api-us.faceplusplus.com/facepp/v3/detect"
-API_KEY2 = "lcudl8swUK_gd_w6dhaaPzaKDEpapz30"
-API_SECRET = "qXxltUT2eKNTt3Ig-cGhIXivIoZenyQV"
+API_KEY = os.getenv("TMDB_API_KEY")
+API_KEY2 = os.getenv("FACEPP_API_KEY")
+API_SECRET = os.getenv("FACEPP_API_SECRET")
 EMO = {
   "happiness": [35, 12, 16, 10402],      
   "sadness": [35, 16, 10751, 10402],    
